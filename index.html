@@ -27,11 +27,17 @@
           <input name="consent" type="checkbox" required />
           <span>I agree to receive the newsletter.</span>
         </label>
+        <div id="turnstile-container" class="turnstile"></div>
         <button type="submit">Subscribe</button>
         <p id="status" class="status" role="status" aria-live="polite"></p>
       </form>
     </main>
     <script src="./config.js"></script>
     <script src="./app.js"></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoaded&render=explicit"
+      async
+      defer
+    ></script>
   </body>
 </html>

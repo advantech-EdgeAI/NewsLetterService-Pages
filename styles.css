@@ -100,6 +100,10 @@ input:focus {
   margin-top: 2px;
 }
 
+.turnstile {
+  min-height: 65px;
+}
+
 button {
   min-height: 46px;
   border: 0;
