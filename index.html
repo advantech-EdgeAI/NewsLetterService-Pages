@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edge AI Newsletter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="intro">
+        <p class="eyebrow">Advantech Edge AI</p>
+        <h1>Edge AI Newsletter</h1>
+        <p class="lede">Updates on AI agents, vision systems, robotics, and deployment notes from the Edge AI team.</p>
+      </section>
+
+      <form id="subscribe-form" class="form">
+        <label>
+          <span>Name</span>
+          <input name="name" autocomplete="name" required maxlength="100" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" autocomplete="email" required />
+        </label>
+        <label class="consent">
+          <input name="consent" type="checkbox" required />
+          <span>I agree to receive the newsletter.</span>
+        </label>
+        <button type="submit">Subscribe</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
